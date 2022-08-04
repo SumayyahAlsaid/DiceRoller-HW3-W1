@@ -4,30 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
-    <!-- text for show adjustments-->
-    <TextView
-        android:id="@+id/txt_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        tools:text="@string/number_1"
+    <ImageView
+        android:id="@+id/image_dice"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/dice_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/btn_roll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:backgroundTint="@color/dark_red"
         android:text="@string/roll"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_number" />
+        app:layout_constraintTop_toBottomOf="@+id/image_dice" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
